@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+//Fa�a um programa que leia o ano de nascimento de uma pessoa, calcule a idade dela e
+//depois mostre se ela pode ou n�o votar
+{
+    int ano_nasc, ano, idade;
+        cout << "Informe seu ano de nascimento: ";
+        cin >> ano_nasc;
+        cout << "Informe o ano que estamos: ";
+        cin >> ano;
+
+        idade = ano-ano_nasc;
+
+        if (idade >=18) {
+            cout << "Voce tem idade para votar. ";
+       } else
+            cout << "Voce n�o tem idade para votar. ";
+
+
+    return 0;
+}

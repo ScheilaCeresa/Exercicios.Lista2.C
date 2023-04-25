@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+//Numa promo��o exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos,
+//mas especialmente para mulheres. Fa�a um programa que leia nome,sexo e o valor das compras
+//do cliente e calcule o pre�o com desconto. Sabendo que:
+//� Homens ganham 5% de desconto
+//� Mulheres ganham 13% de desconto
+
+int main()
+{
+    string nome;
+    char sexo;
+    float valor_compra, d_m=0.05, d_f=0.13, valor_desconto, valor_final;
+
+    cout << "Informe seu nome: ";
+    cin >> nome;
+    cout << "Informe seu sexo F ou M: ";
+    cin >> sexo;
+    cout << "Informe o valor da compra: ";
+    cin >> valor_compra;
+
+    if (sexo='F') {
+            valor_desconto = valor_compra*d_f;
+            valor_final = valor_compra-valor_desconto;
+    }
+    else
+        if (sexo='M') {
+            valor_desconto = valor_compra*d_m;
+            valor_final = valor_compra-valor_desconto;
+        }
+        else
+            cout <<"Erro. ";
+
+    cout <<valor_final;
+    return 0;
+}

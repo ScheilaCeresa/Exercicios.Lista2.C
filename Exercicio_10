@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+//Crie um programa que leia duas notas de um aluno e calcule a sua m�dia, mostrando uma
+//mensagem no final, de acordo com a m�dia atingida:
+//� M�dia at� 4.9: REPROVADO
+//� M�dia entre 5.0 e 6.9: RECUPERA��O
+//� M�dia 7.0 ou superior: APROVADO
+
+int main()
+{
+    float nota1, nota2, media;
+    cout << "Informe suas duas notas: ";
+    cin >> nota1;
+    cin >> nota2;
+
+    media = (nota1 + nota2) / 2;
+
+    if (media <= 4.9) {
+        cout << "Voce esta reprovado. Com media: "<<media;
+    }
+    else
+        if (media >= 7.0) {
+            cout << "Voce esta aprovado. Com media: "<<media;
+        }
+        else
+            cout << "Voce esta em recuperacao. Com media: "<<media;
+
+    return 0;
+}

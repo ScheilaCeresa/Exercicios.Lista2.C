@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+// Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situa��o em
+// rela��o ao alistamento militar.
+//� Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento.
+//� Se j� tiver depois dos 18 anos, mostre quantos anos j� se passaram do alistamento.
+
+int main()
+{
+    int ano_nasc, ano=2023, idade;
+
+        cout << "Informe seu ano de nascimento :";
+        cin >> ano_nasc;
+
+        idade = ano-ano_nasc;
+
+        if (idade < 18)
+            cout << "Falta "<<18-idade<<" anos para se alistar. ";
+        else
+            cout << "Passou "<<idade-18<<" anos para se alista. ";
+    return 0;
+}

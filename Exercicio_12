@@ -1,0 +1,34 @@
+//Desenvolva um programa que leia o nome de um funcion�rio, seu sal�rio, quantos anos ele
+//trabalha na empresa e mostre seu novo sal�rio, reajustado de acordo com a tabela a seguir:
+//� At� 3 anos de empresa: aumento de 3%
+//� entre 3 e 10 anos: aumento de 12.5%
+//� 10 anos ou mais: aumento de 20%
+
+int main()
+{
+    string nome;
+    int anos_trabalho;
+    float salario, novo_salario;
+
+    cout << "Informe seu nome: ";
+    cin >> nome;
+    cout << "Informe seu salario: ";
+    cin >> salario;
+    cout << "Informe quantos anos de empresa: ";
+    cin >> anos_trabalho;
+
+    if (anos_trabalho<= 3) {
+        novo_salario = salario*0.03;
+    }
+    else
+    if (anos_trabalho> 10) {
+        novo_salario = salario*0.2;
+    }
+    else
+        novo_salario = salario*0.125;
+
+cout << " "<<salario+novo_salario;
+
+
+    return 0;
+}

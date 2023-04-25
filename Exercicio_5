@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+// Fa�a um algoritmo que leia um determinado ano e mostre se ele � ou n�o BISSEXTO
+int main()
+{
+    int ano;
+
+    cout << "Informe um ano: ";
+    cin >> ano;
+
+    if (ano % 4 == 0 or ano % 100 != 0 or ano % 400 == 0) {
+            cout << "Ano eh bissexto. "<<ano;
+    }
+    else
+        cout << "Nao eh ano bissexto. "<<ano;
+    return 0;
+}

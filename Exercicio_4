@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+ //Desenvolva um programa que leia um n�mero inteiro e mostre se ele � PAR ou �MPAR
+
+int main()
+{ int num;
+
+    cout << "Imforme um numero: ";
+    cin >> num;
+
+    if (num % 2 == 0) {
+        cout << "Numero eh par. "<<num;
+    }
+    else
+        cout << "numero eh impar. "<<num;
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+// Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua m�dia e mostre
+//na tela. No final, analise a m�dia e mostre se o aluno teve ou n�o um bom aproveitamento (se
+//ficou acima da m�dia 7.0).
+
+int main()
+{
+    string nome;
+    float nota1, nota2, media;
+
+    cout <<"Informe seu nome: ";
+    cin >> nome;
+    cout << "Informe suas duas notas: ";
+    cin >> nota1;
+    cin >> nota2;
+
+    media = (nota1+nota2)/2;
+
+    if (media>7) {
+        cout << "Teve um bom aproveitamento. "<<media;
+    }
+    else
+        cout << "Nao teve um bom aproveitamento. "<<media;
+    return 0;
+}

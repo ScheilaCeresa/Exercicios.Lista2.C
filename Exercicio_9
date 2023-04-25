@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+//Escreva um algoritmo que leia dois n�meros inteiros e compare-os, mostrando na tela uma
+//das mensagens abaixo:
+//� O primeiro valor � o maior
+//� O segundo valor � o maior
+//� N�o h� valor maior, os dois s�o iguais
+
+int main()
+{
+    int num1, num2;
+
+    cout << "Informe dois numeros inteiros: ";
+    cin >> num1;
+    cin >> num2;
+
+        if (num1==num2) {
+            cout << "Os valores sao iguais. ";
+        }
+        else
+            if (num1 > num2) {
+                cout << "O primeiro valor eh maior. ";
+            }
+            else
+                cout << "O segundo valor eh maior. ";
+
+    cout << "Os valores sao: "<<num1<<" e "<<num2;
+    return 0;
+}
